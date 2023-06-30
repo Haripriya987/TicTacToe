@@ -1,0 +1,71 @@
+.main{
+  text-align:center;
+}
+.App{
+  width:70%;
+  height:400px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding:auto;
+  margin:auto;
+
+
+}
+.board{
+  width:300px;
+  height:300px;
+  border:none;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  }
+.row{
+  flex:32%;
+  display: flex;
+  flex-direction:row ;
+  padding:1%;
+  }
+.square{
+  flex:32%;
+  height:100%;
+  border:2px solid rgb(46, 10, 192);
+  cursor:pointer;
+  display: grid;
+  place-items:center;
+  font-size:40px ;
+  color:white;
+  margin:1% ;
+ /* background-color: #23b184;*/
+  border-radius: 4px;
+/*9023b1*/
+}
+.square:active{
+  background-color: #87f3c2;
+}
+.square.x {
+  color:green; /* Set the color for X */
+}
+.square.o {
+  color: black; /* Set the color for O */
+}
+p{
+font-size: 20px;
+}
+
+
+@media(max-width:780px) {
+ .App{
+
+  padding-left:10%;
+  margin:5px;
+  width:60vw;
+  height:60vh;
+ }
+ .board{
+  width:250px;
+  height:250px;
+ }
+
+ 
+}
